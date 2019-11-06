@@ -4,7 +4,7 @@ import {HomeComponent } from './components/home/home.component';
 import {SolisalaComponent} from './components/solisala/solisala.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'solisala', component: SolisalaComponent},
+  {path: 'user', component: SolisalaComponent},
   {path: '*', redirectTo: ''}
 ];
 
