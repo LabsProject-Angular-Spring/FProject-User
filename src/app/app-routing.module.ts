@@ -5,7 +5,7 @@ import {SolisalaComponent} from './components/solisala/solisala.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'user', component: SolisalaComponent},
-  {path: '*', redirectTo: ''}
+  { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
