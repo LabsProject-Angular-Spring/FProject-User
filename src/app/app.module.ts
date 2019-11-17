@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SolisalaComponent } from './components/solisala/solisala.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormBuilder } from 'ngx-dynamic-form-builder';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { DynamicFormBuilder } from 'ngx-dynamic-form-builder';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [    DynamicFormBuilder],
+  providers: [HttpClientModule,   DynamicFormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

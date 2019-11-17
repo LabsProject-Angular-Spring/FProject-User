@@ -1,13 +1,7 @@
 <div class="padre">
   <div class="lista">
       <div class="form-row">
-          <div class="form-group col-md-6">
-              <label for="inputState">Id de usuario</label>
-              <select id="inputState" class="form-control" >
-                  <option selected>Seleccionar</option>
-                  <option  *ngFor="let option of Usuarios">{{option.Id}}</option>
-              </select>
-          </div>
+
       </div>
       <table class="table">
       <thead class="thead-dark" >
@@ -20,9 +14,9 @@
       </thead>
       <tbody>
       <tr  *ngFor="let option of Usuarios">
-          <td>{{option.Id}}</td>
-          <td>{{option.Nombre}}</td>
-          <td>{{option.Tipo}}</td>
+          <td>{{option.id}}</td>
+          <td>{{option.name}}</td>
+          <td>{{option.userType}}</td>
           <td>{{option.email}}</td>
       </tr>
       </tbody>
